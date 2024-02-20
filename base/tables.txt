@@ -1,0 +1,40 @@
+Tabla: clients
+Descripción: Contiene información sobre los clientes de teams.
+Campos:
+- id (int): El identificador único del cliente.
+- firstname (varchar): Primer nombre del cliente.
+- middlename (varchar): Segundo nombre del cliente.
+- lastname (varchar): Apellidos del cliente.
+- email (varchar): Dirección de correo electrónico del cliente.
+- address (varchar): Dirección física del cliente.
+- active (boolean): Estado del cliente (activo o inactivo).
+
+Tabla: Productos
+Descripción: Lista de productos disponibles para la venta.
+Campos:
+- id_producto (int): Identificador único de cada producto.
+- nombre (varchar): Nombre del producto.
+- descripcion (text): Descripción detallada del producto.
+- precio (decimal): Precio unitario del producto.
+- stock (int): Cantidad disponible del producto en el inventario.
+
+Tabla: Pedidos
+Descripción: Registros de pedidos realizados por los clientes.
+Campos:
+- id_pedido (int): Número de identificación único para cada pedido.
+- id_cliente (int): Identificador del cliente que realizó el pedido.
+- id_producto (int): Identificador del producto solicitado.
+- fecha_pedido (datetime): Fecha en que se realizó el pedido.
+- cantidad (int): Cantidad de productos solicitados en el pedido.
+- estado (varchar): Estado actual del pedido (por ejemplo, 'pendiente', 'completado').
+
+Tabla: Envios
+Descripción: Información de envío para los pedidos realizados.
+Campos:
+- id_envio (int): Identificador único para cada envío.
+- id_pedido (int): Identificador del pedido asociado al envío.
+- direccion (varchar): Dirección de envío.
+- ciudad (varchar): Ciudad de destino del envío.
+- codigo_postal (varchar): Código postal de la dirección de envío.
+- fecha_envio (datetime): Fecha en que el pedido fue enviado.
+- estado (varchar): Estado del envío (por ejemplo, 'en tránsito', 'entregado').
