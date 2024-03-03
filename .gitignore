@@ -1,3 +1,5 @@
 /.conda
 /data
+/base
+/documents
 .env
