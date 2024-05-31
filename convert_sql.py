@@ -92,4 +92,4 @@ def transcribir_sql_a_lenguaje_natural(archivo_sql, archivo_txt):
         print(f"Error al transcribir el archivo: {e}")
 
 # Uso de la función
-transcribir_sql_a_lenguaje_natural('./data/teams_actual.sql', './documents/markdown_database.md')
+transcribir_sql_a_lenguaje_natural('./data/teams.sql', './documents/markdown_database.md')
